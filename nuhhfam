@@ -1,4 +1,3 @@
---------- FULL MERGED UI + BROLY + AUTOQUEST SCRIPT ---------
 
 -- === WHITELIST SYSTEM ===
 local whitelist = {
@@ -17,7 +16,7 @@ end
 -- CLEANUP
 pcall(function() game.CoreGui.BroccoliFarmUI:Destroy() end)
 
--- === GUI SETUP (JoinNotify style) ===
+-- === GUI SETUP  ===
 local gui = Instance.new("ScreenGui")
 gui.Name = "BroccoliFarmUI"
 gui.Parent = game.CoreGui
@@ -171,7 +170,7 @@ local function form()
     pcall(function()
         local equipskill = RS:WaitForChild("Package",5).Events:WaitForChild("equipskill")
         local ta = RS:WaitForChild("Package",5).Events:WaitForChild("ta")
-        local formName = "Beast"
+        local formName = "Primal Radiance"
         equipskill:InvokeServer(formName)
         repeat task.wait()
             if player.Status and player.Status.SelectedTransformation and player.Status.Transformation then
